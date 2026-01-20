@@ -1,0 +1,36 @@
+body{
+    background-image:url(source/background.webp);
+
+}
+.key-container{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rgb(31, 28, 28); */
+    position: relative;
+    top: 370px;
+}
+.key{
+    border: 3px solid white;
+    border-radius: 30px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+kbd{
+    display: block;
+    font-size: 40px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+#sound{
+    color: white;
+    text-transform: uppercase;
+}
+.effect{
+    border: 5px solid yellow;
+    transform: scale(1.15);
+    box-shadow:  0    4px   10px   0    yellow;
+}
