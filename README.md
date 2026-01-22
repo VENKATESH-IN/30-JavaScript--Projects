@@ -1,1 +1,1 @@
-building 30 projects in 30 days
+building 30 things  using javaScript
