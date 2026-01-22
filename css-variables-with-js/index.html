@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --spacing:10px;
+            --blur:0px;
+            --base:#ffc600;
+        }
+        html{
+            text-align: center;
+        }
+        img{
+            width: 600px;
+            padding: var(--spacing);
+            background-color: var(--base);
+            filter: blur(var(--blur));
+        }
+        span{
+            color: var(--base);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>modifing css variables uaing <span>JS</span></h1>
+ <label for="space">Spacing</label>
+    <input type="range" name="spacing" id="space"  min="10" max="200" value="10" data-postfix="px">
+    <label for="blur">blur</label> 
+    <input type="range" name="blur" id="blur"  min="0" max="25" value="10" data-postfix="px">
+    <label for="color">color</label>
+    <input type="color" name="base" id="color" value="#ffc600">
+    <br>
+    <br><br>
+    <img src="https://imgs.search.brave.com/EKKX47HQXnVD0RXPKopghTDQUJW6cZHVX9HsC4i0s1U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbHBhcGVyc2Fm/YXJpLmNvbS84MS8y/Ni9mRDY1OTIuanBn" alt="image not found">
+<script src="script.js"></script>
+</body>
+</html>
